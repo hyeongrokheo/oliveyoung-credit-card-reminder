@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "올리브영 임직원 할인 한도 조회",
+  "version": "1.0.3",
+  "description": "올리브영 임직원 할인 잔여 한도를 실시간으로 확인할 수 있습니다.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.oliveyoung.co.kr/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.oliveyoung.co.kr/*"],
+      "js": ["utils.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

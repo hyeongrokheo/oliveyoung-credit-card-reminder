@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>올리브영 임직원 할인 설정</title>
+  <style>
+    body {
+      width: 320px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 12px;
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      color: #555;
+      font-weight: 500;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: #00a862;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00a862;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    button:hover {
+      background-color: #008d52;
+    }
+    button:active {
+      background-color: #007544;
+    }
+    .success-message {
+      display: none;
+      padding: 8px;
+      background-color: #d4edda;
+      color: #155724;
+      border-radius: 4px;
+      font-size: 13px;
+      margin-top: 12px;
+      text-align: center;
+    }
+    .info-text {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>카드 정보 설정</h2>
+
+  <div class="form-group">
+    <label for="acqrCd">카드사</label>
+    <select id="acqrCd">
+      <option value="KBC">KB국민카드</option>
+      <option value="HDC">현대카드</option>
+      <option value="SSC">삼성카드</option>
+      <option value="LTC">롯데카드</option>
+      <option value="SHN">신한카드</option>
+      <option value="HNC">하나카드</option>
+      <option value="WRC">우리카드</option>
+      <option value="NHC">NH농협카드</option>
+      <option value="BCC">BC카드</option>
+      <option value="CTB">씨티카드</option>
+      <option value="KKB">카카오뱅크</option>
+    </select>
+    <div class="info-text">임직원 할인 카드를 선택하세요</div>
+  </div>
+
+  <div class="form-group">
+    <label for="cardNo">카드번호 (숫자만)</label>
+    <input type="text" id="cardNo" placeholder="1234567890123456" maxlength="16">
+    <div class="info-text">하이픈(-) 없이 숫자만 입력하세요</div>
+  </div>
+
+  <div class="form-group">
+    <label for="cardAvalTermYm">유효기간 (MMYY)</label>
+    <input type="text" id="cardAvalTermYm" placeholder="0732" maxlength="4">
+    <div class="info-text">예: 2032년 7월 → 0732 (카드에 표시된 형식)</div>
+  </div>
+
+  <button id="saveBtn">저장</button>
+
+  <div class="success-message" id="successMessage">
+    저장되었습니다! 올리브영 페이지를 새로고침하세요.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
