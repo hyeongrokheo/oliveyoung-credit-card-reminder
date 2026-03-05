@@ -9,18 +9,18 @@
 - 새로고침 버튼으로 수동 업데이트 가능
 - 5분마다 자동 갱신
 
-![img.png](images/img.png)
+<img src="images/img1.png" width="500">
 
 ### 장바구니 최종 결제금액 계산
 - 총 판매가 기준으로 임직원 할인 적용 시 최종 금액 자동 계산
 
-![img.png](images/img2.png)
+<img src="images/img2.png" width="700">
 
 ### 상품 상세 페이지 최종 결제 금액 계산
 - 쿠폰 적용가 기준으로 임직원 할인 자동 계산
 - 수량 변경 시 실시간 재계산
 
-![img.png](images/img3.png)
+<img src="images/img3.png" width="500">
 
 ## 할인 계산 방식
 
@@ -55,10 +55,12 @@
 
 1. Chrome 우측 상단의 확장 프로그램 아이콘 클릭
 
-![img.png](images/img4.png)
+<img src="images/img4.png" width="300">
+
 2. 카드 정보 입력
 
-![img.png](images/img5.png)
+<img src="images/img5.png" width="400">
+
    - **카드사**: 임직원 할인 카드사 선택 (KB, 현대, 삼성, 롯데 등)
    - **카드번호**: 하이픈(-) 없이 16자리 숫자만 입력
    - **유효기간**: MMYY 형식으로 입력 (예: 2032년 7월 → `0732`)
